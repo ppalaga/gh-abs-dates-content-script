@@ -1,0 +1,16 @@
+{
+  "name": "GH Absolute Dates Content Script",
+  "version": "0.1",
+  "permissions": [
+    "http://github.com/*",
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://github.com/*", "https://github.com/*"],
+      "js": ["gh-abs-dates-content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
